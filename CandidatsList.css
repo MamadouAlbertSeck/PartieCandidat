@@ -1,0 +1,99 @@
+/* Réinitialisation des marges et des paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2D3748; /* Fond sombre pour toute la page */
+  color: #E2E8F0; /* Texte clair */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1A202C; /* Fond sombre pour le conteneur */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #38B2AC; /* Couleur turquoise pour le titre */
+  margin-bottom: 30px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #4A5568; /* Bordure pour le tableau */
+}
+
+.table th {
+  background-color: #2D3748; /* Fond sombre pour les en-têtes */
+  color: #E2E8F0; /* Texte clair pour les en-têtes */
+  font-size: 1.1rem;
+}
+
+.table td {
+  background-color: #1A202C; /* Fond sombre pour les lignes du tableau */
+  color: #E2E8F0; /* Texte clair pour les données */
+  font-size: 1rem;
+}
+
+.table tr:nth-child(even) td {
+  background-color: #2D3748; /* Alternance de fond pour les lignes paires */
+}
+
+.table tr:hover {
+  background-color: #38B2AC; /* Survol des lignes avec une couleur turquoise */
+  color: white;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.error-message {
+  color: #F56565; /* Couleur rouge pour les messages d'erreur */
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loading-message {
+  color: #38B2AC; /* Couleur turquoise pour le message de chargement */
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .table th, .table td {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
