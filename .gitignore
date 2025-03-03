@@ -1,0 +1,14 @@
+# Node.js (React)
+node_modules/
+build/
+.env
+
+# PHP/Laravel
+vendor/
+storage/
+.env
+bootstrap/cache/
+
+# IDE & OS files
+.DS_Store
+Thumbs.db
